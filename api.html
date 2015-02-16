@@ -1,0 +1,406 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>居安網</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="stylesheets/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]><link href="stylesheets/api_title.css" rel="stylesheet"><![endif]-->
+    <style type="text/css">
+            body {
+            margin:0;
+            padding:0;
+            background: #000 url(images/About_Background.png) center center fixed no-repeat;
+            -moz-background-size: cover;
+            background-size: cover;
+            }
+            p{
+              color:  #F5F5DC;
+              font-family: '微軟正黑體';
+            }
+    </style> 
+
+    <style class="cp-pen-styles">@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+                
+
+                .box {
+                  background: #2a2a2c;
+                  border: 0.1em solid #bebebe;
+                  bottom: 0;
+                  font-family: 'Open sans', sans-serif;
+                  //line-height: 1em; //行句
+                  font-size: 1.1em;
+                  height: 5.5em; //高度
+                  left: 0;
+                  margin: auto;
+                  overflow: hidden;
+                  right: 0;
+                  top: 0;
+                  width: 100%;
+                  -moz-border-radius: 0.3em;
+                  -webkit-border-radius: 0.3em;
+                  border-radius: 0.3em;
+                }
+                .boxInnertxt {
+                  background: #2a2a2c;
+                  font-family: 'Open sans', sans-serif;
+                  font-size: 1.1em;
+
+                  height: 5.5em; //高度
+                  left: 0;
+                  overflow: hidden;
+                  right: 0;
+                  top: 0;
+                  width: 100%;
+                  -moz-border-radius: 0.3em;
+                  -webkit-border-radius: 0.3em;
+                  border-radius: 0.3em;
+                }
+                .boxCodeview {
+                  background: #2a2a2c;
+                  font-family: 'Open sans', sans-serif;
+                  font-size: 1.1em;
+                  
+
+                  _height: 5.5em; //高度
+                  min-height:5.5em; //自適應高度
+                  left: 0;
+                  overflow: auto; //自動卷軸
+                  right: 0;
+                  top: 0;
+                  width: 100%;
+                  -moz-border-radius: 0.3em;
+                  -webkit-border-radius: 0.3em;
+                  border-radius: 0.3em;
+                }
+                .content{
+                  font-family: '微軟正黑體';
+                  font-size:20px;
+                  color: #BBBBBB;
+                  margin:0 auto;
+                  width:50%;             /*—這邊先設定c1的寬度為整個瀏覽器的80%— */
+                  text-align:left;
+                  
+
+                }
+                @media all and (max-width: 33em) {
+                  .box {
+                    width: 100%;
+                    //height: 100%;
+                  }
+                }
+                .box .instruction {
+                  background: #bebebe;
+                  color: rgba(0, 0, 0, 0.8);
+                  font-weight: bold;
+                  font-size: 18px;
+                  line-height: 1.5em; //行句
+                  margin-bottom: 1.2em;
+                  padding: 0.4em;
+                  text-align: center;
+                  text-shadow: 0.05em 0.05em #fff;
+                  -moz-box-shadow: 0.2em 0 0.3em #000;
+                  -webkit-box-shadow: 0.2em 0 0.3em #000;
+                  box-shadow: 0.2em 0 0.3em #000;
+                }
+                .box .line {
+                  font-family: Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+                  padding: 0.1em 0.7em;
+                  color: rgba(190, 190, 190, 0.4);
+                }
+                .box .line div {
+                  display: inline-block;
+                }
+                .box .line .tild {
+                  color: aqua;
+                }
+                .box .line .doller {
+                  color: #cc8400;
+                }
+                .box.line.content {
+                  color: #BBBBBB;
+                  font-size: 18px;
+                  text-align: left;
+                  //overflow: auto; //自動卷軸
+                  //font-weight: bold;
+                }
+                .box .line .datastyle {
+                  color: #ffffad;
+                  font-size: 14px;
+                  //font-weight: bold;
+                }
+    </style>
+
+
+
+
+
+    <style>
+        .hide {
+          display: none !important;
+        }
+        .embed-nav {
+          background: #ffffff;
+          
+        }
+        .embed-nav a {
+          color: #000000;
+        }
+        .embed-nav a.active {
+          background: #ffffff;
+          color: #000000;
+        }
+        .embed-nav a.active:after {
+          border-top-color: #ffffff;
+        }
+        .embed-nav .logo-wrap a {
+          color: #ffffff;
+        }
+        .embed-nav .cp-embed-logo {
+          fill: #ffffff !important;
+        }
+    </style>
+
+    <!-- Code View CSS-->
+    <link href="http://assets.cdpn.io/assets/embed/embed-600d33c1fd6f7ed19f1eda54121d80d8.css" media="all" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://codepen.io/pouretrebelle/pen/amzjk.css">
+    <style type="text/css"></style>
+
+
+
+       
+
+          
+
+  
+  </head>
+  <body onload = "init_div(4)">
+      <!-- THE TITLE -->
+      <div class="navbar-wrapper" align="center" style="width:80%; margin:0px auto;">
+      <div class="container" style="width:100%;">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation" style="width:100%;">
+          <div class="container"> 
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div style="width:100%;">
+             <a href="index"><img src="images/houseicon3.png" height="50px"></a>
+              </div>
+              
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li class="active"><a href="api">API</a></li>
+                <li><a href="SearchPlace">SearchPlace</a></li>
+                <!--<li><a href="separate.html"></a></li> -->
+               
+              </ul>
+            </div>
+          </div>
+          <!-- /.carousel -->
+        </div>
+		
+      </div>
+      
+    </div>
+
+
+
+   <!-- START THE FEATURETTES -->
+   <div class="container" style="width:80%; margin:50px auto;">
+   <h1 style="font-family:'微軟正黑體';text-align:left;font-weight: bold; color:white">About api</h1>
+    <hr>
+            <!-- 公告 -->
+          <div id="tit" class="box" style="width:60%;"><div class="instruction">公告</div>
+          <div id="tit_box" class="boxInnertxt" >
+            <div id="a1" class="line" style="white-space: nowrap;">
+              <div class="tild">~</div>
+              <div class="doller">$</div>
+              <div class="content" style="color:#FFFF00;">HS居安網 API正式上線囉!!!!</div>
+            </div>
+            <div id="a2" class="line" style="white-space: nowrap;">
+              <div class="tild">~</div>
+              <div class="doller">#</div>
+              <div class="content">土石流資料庫 正常運行中</div>
+            </div>
+            <div id="a3" class="line" style="white-space: nowrap;">
+              <div class="tild">~</div>
+              <div class="doller">#</div>
+              <div class="content">降雨量資料庫 正常運行中</div>
+            </div>
+            <div id="a4" class="line" style="white-space: nowrap;">
+              <div class="tild">~</div>
+              <div class="doller">#</div>
+              <div class="content">紫外線資料庫 正常運行中</div>
+            </div>
+            <div id="a5" class="line" style="white-space: nowrap;">
+              <div class="tild">~</div>
+              <div class="doller">#</div>
+              <div class="content">大氣品質資料庫 正常運行中</div>
+            </div>
+          </div>
+          </div>
+
+
+    <!-- 下方為codeview****** -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h5 class="featurette-heading" style="color:#ffffff; font-family: '微軟正黑體';">台灣地區 降雨量<span class="text-muted">查詢</span></h5><br>
+
+      <body onload="resizeEmbedWindow();" id="the-body" style="height: 440px;">
+
+        <div class="embed-nav group" id="embed-nav">
+
+          <ul>
+
+            <li>
+              <a id="api-1" class="active" onclick="change_div('api','1')">API 說明</a></li>
+            <li>
+              <a id="format-1" class="" onclick="change_div('format','1')">輸出格式</a> </li>
+            <li>
+              <a id="sample-1" class=""  onclick="change_div('sample','1')">使用範例</a></li>
+            
+ 
+            <!--內容-->    
+            <div id="tit_box" class="boxCodeview" >
+              <br>
+              <div id="codeview-1" class="content" >
+              網址/api?datatype=raintime&loc=23.0393,121.2929</div>
+              <br><br>
+            </div>
+            
+          </ul>
+        </div>
+
+    <hr>
+<!-- /END THE FEATURETTES -->
+    <br>
+    <br>
+    <br>
+    <h5 class="featurette-heading" style="color:#ffffff; font-family: '微軟正黑體';">台灣地區 空氣品質<span class="text-muted">查詢</span></h5><br>
+
+      <!--<body onload="resizeEmbedWindow();" id="the-body" style="height: 440px;">-->
+
+        <div class="embed-nav group" id="embed-nav">
+
+          <ul>
+
+            <li>
+              <a id="api-2" class="active" onclick="change_div('api','2')">API 說明</a></li>
+            <li>
+              <a id="format-2" class="" onclick="change_div('format','2')">輸出格式</a> </li>
+            <li>
+              <a id="sample-2" class=""  onclick="change_div('sample','2')">使用範例</a></li>
+            
+ 
+            <!--內容-->    
+            <div id="tit_box" class="boxCodeview" >
+              <br>
+              <div id="codeview-2" class="content" >
+              網址/api?datatype=raintime&loc=23.0393,121.2929</div>
+              <br><br>
+            </div>
+          </ul>
+        </div>
+
+    <hr>
+<!-- /END THE FEATURETTES -->
+    <br>
+    <br>
+    <br>
+    <h5 class="featurette-heading" style="color:#ffffff; font-family: '微軟正黑體';">台灣地區 紫外線危害<span class="text-muted">查詢</span></h5><br>
+
+      <!--<body onload="resizeEmbedWindow();" id="the-body" style="height: 440px;">-->
+
+        <div class="embed-nav group" id="embed-nav">
+
+          <ul>
+
+            <li>
+              <a id="api-3" class="active" onclick="change_div('api','3')">API 說明</a></li>
+            <li>
+              <a id="format-3" class="" onclick="change_div('format','3')">輸出格式</a> </li>
+            <li>
+              <a id="sample-3" class=""  onclick="change_div('sample','3')">使用範例</a></li>
+            
+ 
+            <!--內容-->    
+            <div id="tit_box" class="boxCodeview" >
+              <br>
+              <div id="codeview-3" class="content" >
+              網址/api?datatype=raintime&loc=23.0393,121.2929</div>
+              <br><br>
+            </div>
+          </ul>
+        </div>
+
+    <hr>
+<!-- /END THE FEATURETTES -->
+    <br>
+    <br>
+    <br>
+    <h5 class="featurette-heading" style="color:#ffffff; font-family: '微軟正黑體';">台灣地區 土石流危害<span class="text-muted">查詢</span></h5><br>
+
+      <!--<body onload="resizeEmbedWindow();" id="the-body" style="height: 440px;">-->
+
+          <div class="embed-nav group" id="embed-nav">
+
+          <ul>
+
+            <li>
+              <a id="api-4" class="active" onclick="change_div('api','4')">API 說明</a></li>
+            <li>
+              <a id="format-4" class="" onclick="change_div('format','4')">輸出格式</a> </li>
+            <li>
+              <a id="sample-4" class=""  onclick="change_div('sample','4')">使用範例</a></li>
+            
+ 
+            <!--內容-->    
+            <div id="tit_box" class="boxCodeview" >
+              <br>
+              <div id="codeview-4" class="content" >
+              網址/api?datatype=raintime&loc=23.0393,121.2929</div>
+              <br><br>
+            </div>
+          </ul>
+
+    <hr>
+<!-- /END THE FEATURETTES -->
+
+    
+
+    
+    </div>
+
+
+    
+
+</body>
+    <!-- /END THE FEATURETTES -->
+
+
+    <script src="./javascripts/title_box.js"></script>
+    <script src="./javascripts/codeview.js"></script>
+    <script src="./javascripts/api_select_codeview.js"></script> <!--切換動畫 js-->
+    
+
+
+
+  </body>
+</html>
